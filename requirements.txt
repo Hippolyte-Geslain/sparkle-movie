@@ -1,6 +1,10 @@
 # Python 3.13 + Java 17 ou 21 (requis par Spark 4)
+# Windows uniquement : winutils.exe + hadoop.dll dans C:\hadoop\bin (pour que Spark puisse écrire des fichiers)
+
+# Spark
 pyspark==4.0.5
 
+# Manipulation des données (pandas, numpy et pyarrow sont aussi requis par pyspark pour .toPandas())
 pandas==2.3.3
 numpy==2.3.5
 pyarrow==21.0.0
@@ -9,8 +13,8 @@ pyarrow==21.0.0
 matplotlib==3.11.2
 seaborn==0.13.2
 
-# KNN, TF-IDF, similarité cosinus
+# Modélisation : KNN, TF-IDF, similarité cosinus (parties 4 et 5, modelisation.ipynb)
 scikit-learn==1.9.1
 
-# Notebooks (VS Code)
+# Notebooks (VS Code / Jupyter)
 ipykernel==7.4.0
