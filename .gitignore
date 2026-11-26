@@ -16,3 +16,6 @@ env/
 .idea/
 .DS_Store
 Thumbs.db
+
+# CSV FILES because too heavy
+data/raw/*.csv
