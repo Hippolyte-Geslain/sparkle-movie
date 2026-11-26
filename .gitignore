@@ -19,5 +19,6 @@ env/
 .DS_Store
 Thumbs.db
 
-# CSV FILES because too heavy
-data/raw/*.csv
+# Data folder (raw, clean and Tableau CSV) : too heavy for GitHub (100 MB max per file)
+# -> download MovieLens into data/raw/, then run exploration.ipynb to rebuild the rest
+data/
