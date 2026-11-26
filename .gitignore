@@ -1,1 +1,7 @@
 ml-32m
+
+.vscode
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+data/
