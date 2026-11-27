@@ -1,0 +1,1839 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20263.26.1120.1648                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='5214ebc3c4410104f942aeb5015c2ce78d39bdf421c001a39e28661fd4e4b50d' _.fcp.WorkbookFingerprinting.true...creator-author-id='5214ebc3c4410104f942aeb5015c2ce78d39bdf421c001a39e28661fd4e4b50d' _.fcp.WorkbookFingerprinting.true...creator-license-type='free' _.fcp.WorkbookFingerprinting.true...creator-machine-id='6500e947d66bd5d179f192f5fd890c960fb9282fd1babd7a1c1d59ae3ef3dfd1' _.fcp.WorkbookFingerprinting.true...license-type='free' _.fcp.WorkbookFingerprinting.true...machine-id='6500e947d66bd5d179f192f5fd890c960fb9282fd1babd7a1c1d59ae3ef3dfd1' original-version='18.1' source-build='2026.3.2 (20263.26.1120.1648)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <Extensions />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelSharedDimensions />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <VizExtensions />
+    <_.fcp.VizExtensionsDupEncodingUUID.true...VizExtensionsDupEncodingUUID />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='tableau_movies.csv (Connexions multiples)' inline='true' name='federated.0165wub1205i1u14oaiom1jtmya0' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='tableau_movies' name='textscan.0zhyf751rvhfsz11w8i1q1o60ehf'>
+            <connection class='textscan' directory='C:/Users/axela/OneDrive/Bureau - PC Portable/LaPlateforme/Projets Ecole/AI/B3/Projet 5 - Spark Movie/sparkle-movie/data/tableau' filename='tableau_movies.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='tableau_ratings_by_year' name='textscan.0h25w1m19ci4611fsypnu13oytvm'>
+            <connection class='textscan' directory='C:/Users/axela/OneDrive/Bureau - PC Portable/LaPlateforme/Projets Ecole/AI/B3/Projet 5 - Spark Movie/sparkle-movie/data/tableau' filename='tableau_ratings_by_year.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0zhyf751rvhfsz11w8i1q1o60ehf' name='tableau_movies.csv' table='[tableau_movies#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='fr_FR' separator='|'>
+            <column datatype='string' name='movieId,title,release_year,genres,nb_ratings,avg_rating' ordinal='0' />
+            <column datatype='string' name='F2' ordinal='1' />
+            <column datatype='string' name='F3' ordinal='2' />
+            <column datatype='string' name='F4' ordinal='3' />
+            <column datatype='string' name='F5' ordinal='4' />
+            <column datatype='string' name='F6' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[tableau_movies.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;fr_FR&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;|&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;fr_FR&quot;</attribute>
+              <attribute datatype='string' name='quote-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>movieId,title,release_year,genres,nb_ratings,avg_rating</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[movieId,title,release_year,genres,nb_ratings,avg_rating]</local-name>
+            <parent-name>[tableau_movies.csv]</parent-name>
+            <remote-alias>movieId,title,release_year,genres,nb_ratings,avg_rating</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <object-id>[tableau_movies.csv_B24CED394A2E4D7FB796445A57D8F436]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F2]</local-name>
+            <parent-name>[tableau_movies.csv]</parent-name>
+            <remote-alias>F2</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <object-id>[tableau_movies.csv_B24CED394A2E4D7FB796445A57D8F436]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F3</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F3]</local-name>
+            <parent-name>[tableau_movies.csv]</parent-name>
+            <remote-alias>F3</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <object-id>[tableau_movies.csv_B24CED394A2E4D7FB796445A57D8F436]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F4</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F4]</local-name>
+            <parent-name>[tableau_movies.csv]</parent-name>
+            <remote-alias>F4</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <object-id>[tableau_movies.csv_B24CED394A2E4D7FB796445A57D8F436]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F5</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F5]</local-name>
+            <parent-name>[tableau_movies.csv]</parent-name>
+            <remote-alias>F5</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <object-id>[tableau_movies.csv_B24CED394A2E4D7FB796445A57D8F436]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F6</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F6]</local-name>
+            <parent-name>[tableau_movies.csv]</parent-name>
+            <remote-alias>F6</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <object-id>[tableau_movies.csv_B24CED394A2E4D7FB796445A57D8F436]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='tableau_movies.csv' datatype='table' name='[__tableau_internal_object_id__].[tableau_movies.csv_B24CED394A2E4D7FB796445A57D8F436]' role='measure' type='quantitative' />
+      <column caption='movieId,title,release year,genres,nb ratings,avg rating' datatype='string' name='[movieId,title,release_year,genres,nb_ratings,avg_rating]' role='dimension' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;France&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='tableau_movies.csv' id='tableau_movies.csv_B24CED394A2E4D7FB796445A57D8F436'>
+            <properties context=''>
+              <relation connection='textscan.0zhyf751rvhfsz11w8i1q1o60ehf' name='tableau_movies.csv' table='[tableau_movies#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='fr_FR' separator='|'>
+                  <column datatype='string' name='movieId,title,release_year,genres,nb_ratings,avg_rating' ordinal='0' />
+                  <column datatype='string' name='F2' ordinal='1' />
+                  <column datatype='string' name='F3' ordinal='2' />
+                  <column datatype='string' name='F4' ordinal='3' />
+                  <column datatype='string' name='F5' ordinal='4' />
+                  <column datatype='string' name='F6' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='tableau_genres' inline='true' name='federated.1lmgdes172px0i1ac16mh07duxmf' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='tableau_genres' name='textscan.1d93csn1dwgjqk1bg99m61i5gehj'>
+            <connection class='textscan' directory='C:/Users/axela/OneDrive/Bureau - PC Portable/LaPlateforme/Projets Ecole/AI/B3/Projet 5 - Spark Movie/sparkle-movie/data/tableau' filename='tableau_genres.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='tableau_movie_genres' name='textscan.1val4ju1hrvd4i1914h081xymr9g'>
+            <connection class='textscan' cleaning='yes' compat='no' csvFile='C:/Users/axela/OneDrive/Bureau - PC Portable/LaPlateforme/Projets Ecole/AI/B3/Projet 5 - Spark Movie/sparkle-movie/data/tableau/tableau_movie_genres.csv' dataRefreshTime='' directory='C:/Users/axela/OneDrive/Bureau - PC Portable/LaPlateforme/Projets Ecole/AI/B3/Projet 5 - Spark Movie/sparkle-movie/data/tableau' filename='C:/Users/axela/AppData/Local/Temp/TableauTemp/1t670351r7u7w90zkzhsa0vtucg5/tableau_movie_genres.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation connection='textscan.1val4ju1hrvd4i1914h081xymr9g' name='tableau_genres.csv' table='[tableau_genres#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='fr_FR'>
+              <column datatype='string' name='genre' ordinal='0' />
+              <column datatype='integer' name='nb_ratings' ordinal='1' />
+              <column datatype='real' name='avg_rating' ordinal='2' />
+              <column datatype='integer' name='nb_films' ordinal='3' />
+              <column datatype='real' name='pct_ratings' ordinal='4' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1val4ju1hrvd4i1914h081xymr9g' name='tableau_movie_genres.csv' table='[tableau_movie_genres#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='fr_FR'>
+              <column datatype='integer' name='movieId' ordinal='0' />
+              <column datatype='string' name='genre' ordinal='1' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1val4ju1hrvd4i1914h081xymr9g' name='tableau_ratings_by_year.csv' table='[tableau_ratings_by_year#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='fr_FR'>
+              <column datatype='integer' name='year' ordinal='0' />
+              <column datatype='real' name='rating' ordinal='1' />
+              <column datatype='integer' name='nb_ratings' ordinal='2' />
+            </columns>
+          </relation>
+        </relation>
+        <cols>
+          <map key='[avg_rating]' value='[tableau_genres.csv].[avg_rating]' />
+          <map key='[genre (tableau_movie_genres.csv)]' value='[tableau_movie_genres.csv].[genre]' />
+          <map key='[genre]' value='[tableau_genres.csv].[genre]' />
+          <map key='[movieId]' value='[tableau_movie_genres.csv].[movieId]' />
+          <map key='[nb_films]' value='[tableau_genres.csv].[nb_films]' />
+          <map key='[nb_ratings (tableau_ratings_by_year.csv)]' value='[tableau_ratings_by_year.csv].[nb_ratings]' />
+          <map key='[nb_ratings]' value='[tableau_genres.csv].[nb_ratings]' />
+          <map key='[pct_ratings]' value='[tableau_genres.csv].[pct_ratings]' />
+          <map key='[rating]' value='[tableau_ratings_by_year.csv].[rating]' />
+          <map key='[year]' value='[tableau_ratings_by_year.csv].[year]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[tableau_genres.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;fr_FR&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;fr_FR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[tableau_movie_genres.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;fr_FR&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;fr_FR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[tableau_ratings_by_year.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;fr_FR&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;fr_FR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>genre</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[genre]</local-name>
+            <parent-name>[tableau_genres.csv]</parent-name>
+            <remote-alias>genre</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <object-id>[tableau_genres.csv_AE1D1B4A21EC49B1B395B068FD20F2A7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nb_ratings</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[nb_ratings]</local-name>
+            <parent-name>[tableau_genres.csv]</parent-name>
+            <remote-alias>nb_ratings</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_genres.csv_AE1D1B4A21EC49B1B395B068FD20F2A7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_rating]</local-name>
+            <parent-name>[tableau_genres.csv]</parent-name>
+            <remote-alias>avg_rating</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_genres.csv_AE1D1B4A21EC49B1B395B068FD20F2A7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nb_films</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[nb_films]</local-name>
+            <parent-name>[tableau_genres.csv]</parent-name>
+            <remote-alias>nb_films</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_genres.csv_AE1D1B4A21EC49B1B395B068FD20F2A7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pct_ratings</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pct_ratings]</local-name>
+            <parent-name>[tableau_genres.csv]</parent-name>
+            <remote-alias>pct_ratings</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_genres.csv_AE1D1B4A21EC49B1B395B068FD20F2A7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>movieId</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[movieId]</local-name>
+            <parent-name>[tableau_movie_genres.csv]</parent-name>
+            <remote-alias>movieId</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_movie_genres.csv_90844163A0564384A662EC13FA3A5B3E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>genre</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[genre (tableau_movie_genres.csv)]</local-name>
+            <parent-name>[tableau_movie_genres.csv]</parent-name>
+            <remote-alias>genre</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <object-id>[tableau_movie_genres.csv_90844163A0564384A662EC13FA3A5B3E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[tableau_ratings_by_year.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_ratings_by_year.csv_AAFAA5C9383649A1BD0FC94D9CDDECC7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[rating]</local-name>
+            <parent-name>[tableau_ratings_by_year.csv]</parent-name>
+            <remote-alias>rating</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_ratings_by_year.csv_AAFAA5C9383649A1BD0FC94D9CDDECC7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nb_ratings</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[nb_ratings (tableau_ratings_by_year.csv)]</local-name>
+            <parent-name>[tableau_ratings_by_year.csv]</parent-name>
+            <remote-alias>nb_ratings</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_ratings_by_year.csv_AAFAA5C9383649A1BD0FC94D9CDDECC7]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='None' datatype='integer' name='[Avg Rating (classe)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='-2' formula='[avg_rating]' peg='0' size='0.076' />
+      </column>
+      <column caption='tableau_genres.csv' datatype='table' name='[__tableau_internal_object_id__].[tableau_genres.csv_AE1D1B4A21EC49B1B395B068FD20F2A7]' role='measure' type='quantitative' />
+      <column caption='tableau_movie_genres.csv' datatype='table' name='[__tableau_internal_object_id__].[tableau_movie_genres.csv_90844163A0564384A662EC13FA3A5B3E]' role='measure' type='quantitative' />
+      <column caption='tableau_ratings_by_year.csv' datatype='table' name='[__tableau_internal_object_id__].[tableau_ratings_by_year.csv_AAFAA5C9383649A1BD0FC94D9CDDECC7]' role='measure' type='quantitative' />
+      <column caption='Avg Rating' datatype='real' name='[avg_rating]' role='measure' type='quantitative' />
+      <column caption='Genre (Tableau Movie Genres.Csv)' datatype='string' name='[genre (tableau_movie_genres.csv)]' role='dimension' type='nominal' />
+      <column caption='Genre' datatype='string' name='[genre]' role='dimension' type='nominal' />
+      <column caption='Movie Id' datatype='integer' name='[movieId]' role='dimension' type='ordinal' />
+      <column caption='Nb Films' datatype='integer' name='[nb_films]' role='measure' type='quantitative' />
+      <column caption='Nb Ratings (Tableau Ratings By Year.Csv)' datatype='integer' name='[nb_ratings (tableau_ratings_by_year.csv)]' role='measure' type='quantitative' />
+      <column caption='Nb Ratings' datatype='integer' name='[nb_ratings]' role='measure' type='quantitative' />
+      <column caption='Pct Ratings' datatype='real' name='[pct_ratings]' role='measure' type='quantitative' />
+      <column caption='Rating' datatype='real' name='[rating]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <column-instance column='[avg_rating]' derivation='Avg' name='[avg:avg_rating:ok]' pivot='key' type='ordinal' />
+      <layout common-percentage='1' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' user-set-layout-v2='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[avg:avg_rating:ok]' type='palette'>
+            <map to='#499894'>
+              <bucket>3.5300000000000002</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>3.5821052631578949</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>3.48</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>3.6200000000000001</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>3.5499999999999998</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>3.4900000000000002</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>3.3100000000000001</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>3.79</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>3.5099999999999998</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>3.6699999999999999</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>3.6800000000000002</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>3.9199999999999999</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>3.5899999999999999</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>3.52</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>3.4300000000000002</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>3.6899999999999999</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>3.6000000000000001</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>3.4399999999999999</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;France&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='tableau_genres.csv' id='tableau_genres.csv_AE1D1B4A21EC49B1B395B068FD20F2A7'>
+            <properties context=''>
+              <relation connection='textscan.1val4ju1hrvd4i1914h081xymr9g' name='tableau_genres.csv' table='[tableau_genres#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='fr_FR'>
+                  <column datatype='string' name='genre' ordinal='0' />
+                  <column datatype='integer' name='nb_ratings' ordinal='1' />
+                  <column datatype='real' name='avg_rating' ordinal='2' />
+                  <column datatype='integer' name='nb_films' ordinal='3' />
+                  <column datatype='real' name='pct_ratings' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='tableau_movie_genres.csv' id='tableau_movie_genres.csv_90844163A0564384A662EC13FA3A5B3E'>
+            <properties context=''>
+              <relation connection='textscan.1val4ju1hrvd4i1914h081xymr9g' name='tableau_movie_genres.csv' table='[tableau_movie_genres#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='fr_FR'>
+                  <column datatype='integer' name='movieId' ordinal='0' />
+                  <column datatype='string' name='genre' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='tableau_ratings_by_year.csv' id='tableau_ratings_by_year.csv_AAFAA5C9383649A1BD0FC94D9CDDECC7'>
+            <properties context=''>
+              <relation connection='textscan.1val4ju1hrvd4i1914h081xymr9g' name='tableau_ratings_by_year.csv' table='[tableau_ratings_by_year#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='fr_FR'>
+                  <column datatype='integer' name='year' ordinal='0' />
+                  <column datatype='real' name='rating' ordinal='1' />
+                  <column datatype='integer' name='nb_ratings' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='tableau_movies+' inline='true' name='federated.1m19gjq10k29uu1ea72i002i836m' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='tableau_movies' name='textscan.14ogaeg1mi3ws218rtl8w0m2rixe'>
+            <connection class='textscan' directory='C:/Users/axela/OneDrive/Bureau - PC Portable/LaPlateforme/Projets Ecole/AI/B3/Projet 5 - Spark Movie/sparkle-movie/data/tableau' filename='tableau_movies.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation connection='textscan.14ogaeg1mi3ws218rtl8w0m2rixe' name='tableau_movies.csv' table='[tableau_movies#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='fr_FR'>
+              <column datatype='integer' name='movieId' ordinal='0' />
+              <column datatype='string' name='title' ordinal='1' />
+              <column datatype='integer' name='release_year' ordinal='2' />
+              <column datatype='string' name='genres' ordinal='3' />
+              <column datatype='integer' name='nb_ratings' ordinal='4' />
+              <column datatype='real' name='avg_rating' ordinal='5' />
+            </columns>
+          </relation>
+          <relation connection='textscan.14ogaeg1mi3ws218rtl8w0m2rixe' name='tableau_movie_genres.csv' table='[tableau_movie_genres#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='fr_FR'>
+              <column datatype='integer' name='movieId' ordinal='0' />
+              <column datatype='string' name='genre' ordinal='1' />
+            </columns>
+          </relation>
+          <relation connection='textscan.14ogaeg1mi3ws218rtl8w0m2rixe' name='tableau_genres.csv' table='[tableau_genres#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='fr_FR'>
+              <column datatype='string' name='genre' ordinal='0' />
+              <column datatype='integer' name='nb_ratings' ordinal='1' />
+              <column datatype='real' name='avg_rating' ordinal='2' />
+              <column datatype='integer' name='nb_films' ordinal='3' />
+              <column datatype='real' name='pct_ratings' ordinal='4' />
+            </columns>
+          </relation>
+          <relation connection='textscan.14ogaeg1mi3ws218rtl8w0m2rixe' name='tableau_ratings_by_year.csv' table='[tableau_ratings_by_year#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='fr_FR'>
+              <column datatype='integer' name='year' ordinal='0' />
+              <column datatype='real' name='rating' ordinal='1' />
+              <column datatype='integer' name='nb_ratings' ordinal='2' />
+            </columns>
+          </relation>
+        </relation>
+        <cols>
+          <map key='[avg_rating (tableau_genres.csv)]' value='[tableau_genres.csv].[avg_rating]' />
+          <map key='[avg_rating]' value='[tableau_movies.csv].[avg_rating]' />
+          <map key='[genre (tableau_movie_genres.csv)]' value='[tableau_movie_genres.csv].[genre]' />
+          <map key='[genre]' value='[tableau_genres.csv].[genre]' />
+          <map key='[genres]' value='[tableau_movies.csv].[genres]' />
+          <map key='[movieId (tableau_movie_genres.csv)]' value='[tableau_movie_genres.csv].[movieId]' />
+          <map key='[movieId]' value='[tableau_movies.csv].[movieId]' />
+          <map key='[nb_films]' value='[tableau_genres.csv].[nb_films]' />
+          <map key='[nb_ratings (tableau_genres.csv)]' value='[tableau_genres.csv].[nb_ratings]' />
+          <map key='[nb_ratings (tableau_ratings_by_year.csv)]' value='[tableau_ratings_by_year.csv].[nb_ratings]' />
+          <map key='[nb_ratings]' value='[tableau_movies.csv].[nb_ratings]' />
+          <map key='[pct_ratings]' value='[tableau_genres.csv].[pct_ratings]' />
+          <map key='[rating]' value='[tableau_ratings_by_year.csv].[rating]' />
+          <map key='[release_year]' value='[tableau_movies.csv].[release_year]' />
+          <map key='[title]' value='[tableau_movies.csv].[title]' />
+          <map key='[year]' value='[tableau_ratings_by_year.csv].[year]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[tableau_movies.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;fr_FR&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;fr_FR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[tableau_movie_genres.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;fr_FR&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;fr_FR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[tableau_genres.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;fr_FR&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;fr_FR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[tableau_ratings_by_year.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;fr_FR&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;fr_FR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>movieId</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[movieId]</local-name>
+            <parent-name>[tableau_movies.csv]</parent-name>
+            <remote-alias>movieId</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_movies.csv_50ED1DB4B8C94D23A560C624858AE53F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[tableau_movies.csv]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <object-id>[tableau_movies.csv_50ED1DB4B8C94D23A560C624858AE53F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>release_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[release_year]</local-name>
+            <parent-name>[tableau_movies.csv]</parent-name>
+            <remote-alias>release_year</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_movies.csv_50ED1DB4B8C94D23A560C624858AE53F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>genres</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[genres]</local-name>
+            <parent-name>[tableau_movies.csv]</parent-name>
+            <remote-alias>genres</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <object-id>[tableau_movies.csv_50ED1DB4B8C94D23A560C624858AE53F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nb_ratings</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[nb_ratings]</local-name>
+            <parent-name>[tableau_movies.csv]</parent-name>
+            <remote-alias>nb_ratings</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_movies.csv_50ED1DB4B8C94D23A560C624858AE53F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_rating]</local-name>
+            <parent-name>[tableau_movies.csv]</parent-name>
+            <remote-alias>avg_rating</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_movies.csv_50ED1DB4B8C94D23A560C624858AE53F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>movieId</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[movieId (tableau_movie_genres.csv)]</local-name>
+            <parent-name>[tableau_movie_genres.csv]</parent-name>
+            <remote-alias>movieId</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_movie_genres.csv_1E8E284C0976485AAA86A68977C26AB9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>genre</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[genre (tableau_movie_genres.csv)]</local-name>
+            <parent-name>[tableau_movie_genres.csv]</parent-name>
+            <remote-alias>genre</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <object-id>[tableau_movie_genres.csv_1E8E284C0976485AAA86A68977C26AB9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>genre</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[genre]</local-name>
+            <parent-name>[tableau_genres.csv]</parent-name>
+            <remote-alias>genre</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <object-id>[tableau_genres.csv_49810135E2A54AD9AE2E547CD726C9C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nb_ratings</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[nb_ratings (tableau_genres.csv)]</local-name>
+            <parent-name>[tableau_genres.csv]</parent-name>
+            <remote-alias>nb_ratings</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_genres.csv_49810135E2A54AD9AE2E547CD726C9C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_rating (tableau_genres.csv)]</local-name>
+            <parent-name>[tableau_genres.csv]</parent-name>
+            <remote-alias>avg_rating</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_genres.csv_49810135E2A54AD9AE2E547CD726C9C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nb_films</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[nb_films]</local-name>
+            <parent-name>[tableau_genres.csv]</parent-name>
+            <remote-alias>nb_films</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_genres.csv_49810135E2A54AD9AE2E547CD726C9C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pct_ratings</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pct_ratings]</local-name>
+            <parent-name>[tableau_genres.csv]</parent-name>
+            <remote-alias>pct_ratings</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_genres.csv_49810135E2A54AD9AE2E547CD726C9C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[tableau_ratings_by_year.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_ratings_by_year.csv_DDEE807928A94FD0B5A9AB84AF0B9BBD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[rating]</local-name>
+            <parent-name>[tableau_ratings_by_year.csv]</parent-name>
+            <remote-alias>rating</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_ratings_by_year.csv_DDEE807928A94FD0B5A9AB84AF0B9BBD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nb_ratings</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[nb_ratings (tableau_ratings_by_year.csv)]</local-name>
+            <parent-name>[tableau_ratings_by_year.csv]</parent-name>
+            <remote-alias>nb_ratings</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_ratings_by_year.csv_DDEE807928A94FD0B5A9AB84AF0B9BBD]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='tableau_genres.csv' datatype='table' name='[__tableau_internal_object_id__].[tableau_genres.csv_49810135E2A54AD9AE2E547CD726C9C4]' role='measure' type='quantitative' />
+      <column caption='tableau_movie_genres.csv' datatype='table' name='[__tableau_internal_object_id__].[tableau_movie_genres.csv_1E8E284C0976485AAA86A68977C26AB9]' role='measure' type='quantitative' />
+      <column caption='tableau_movies.csv' datatype='table' name='[__tableau_internal_object_id__].[tableau_movies.csv_50ED1DB4B8C94D23A560C624858AE53F]' role='measure' type='quantitative' />
+      <column caption='tableau_ratings_by_year.csv' datatype='table' name='[__tableau_internal_object_id__].[tableau_ratings_by_year.csv_DDEE807928A94FD0B5A9AB84AF0B9BBD]' role='measure' type='quantitative' />
+      <column caption='Avg Rating (Tableau Genres.Csv)' datatype='real' name='[avg_rating (tableau_genres.csv)]' role='measure' type='quantitative' />
+      <column caption='Avg Rating' datatype='real' name='[avg_rating]' role='measure' type='quantitative' />
+      <column caption='Genre (Tableau Movie Genres.Csv)' datatype='string' name='[genre (tableau_movie_genres.csv)]' role='dimension' type='nominal' />
+      <column caption='Genre' datatype='string' name='[genre]' role='dimension' type='nominal' />
+      <column caption='Genres' datatype='string' name='[genres]' role='dimension' type='nominal' />
+      <column caption='movieId (tableau movie genres.csv)' datatype='integer' name='[movieId (tableau_movie_genres.csv)]' role='dimension' type='ordinal' />
+      <column caption='Movie Id' datatype='integer' name='[movieId]' role='dimension' type='ordinal' />
+      <column caption='Nb Films' datatype='integer' name='[nb_films]' role='measure' type='quantitative' />
+      <column caption='Nb Ratings (Tableau Genres.Csv)' datatype='integer' name='[nb_ratings (tableau_genres.csv)]' role='measure' type='quantitative' />
+      <column caption='Nb Ratings (Tableau Ratings By Year.Csv)' datatype='integer' name='[nb_ratings (tableau_ratings_by_year.csv)]' role='measure' type='quantitative' />
+      <column caption='Nb Ratings' datatype='integer' name='[nb_ratings]' role='measure' type='quantitative' />
+      <column caption='Pct Ratings' datatype='real' name='[pct_ratings]' role='measure' type='quantitative' />
+      <column caption='Rating' datatype='real' name='[rating]' role='measure' type='quantitative' />
+      <column caption='Release Year' datatype='integer' name='[release_year]' role='dimension' type='quantitative' />
+      <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;France&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='tableau_genres.csv' id='tableau_genres.csv_49810135E2A54AD9AE2E547CD726C9C4'>
+            <properties context=''>
+              <relation connection='textscan.14ogaeg1mi3ws218rtl8w0m2rixe' name='tableau_genres.csv' table='[tableau_genres#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='fr_FR'>
+                  <column datatype='string' name='genre' ordinal='0' />
+                  <column datatype='integer' name='nb_ratings' ordinal='1' />
+                  <column datatype='real' name='avg_rating' ordinal='2' />
+                  <column datatype='integer' name='nb_films' ordinal='3' />
+                  <column datatype='real' name='pct_ratings' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='tableau_movie_genres.csv' id='tableau_movie_genres.csv_1E8E284C0976485AAA86A68977C26AB9'>
+            <properties context=''>
+              <relation connection='textscan.14ogaeg1mi3ws218rtl8w0m2rixe' name='tableau_movie_genres.csv' table='[tableau_movie_genres#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='fr_FR'>
+                  <column datatype='integer' name='movieId' ordinal='0' />
+                  <column datatype='string' name='genre' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='tableau_movies.csv' id='tableau_movies.csv_50ED1DB4B8C94D23A560C624858AE53F'>
+            <properties context=''>
+              <relation connection='textscan.14ogaeg1mi3ws218rtl8w0m2rixe' name='tableau_movies.csv' table='[tableau_movies#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='fr_FR'>
+                  <column datatype='integer' name='movieId' ordinal='0' />
+                  <column datatype='string' name='title' ordinal='1' />
+                  <column datatype='integer' name='release_year' ordinal='2' />
+                  <column datatype='string' name='genres' ordinal='3' />
+                  <column datatype='integer' name='nb_ratings' ordinal='4' />
+                  <column datatype='real' name='avg_rating' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='tableau_ratings_by_year.csv' id='tableau_ratings_by_year.csv_DDEE807928A94FD0B5A9AB84AF0B9BBD'>
+            <properties context=''>
+              <relation connection='textscan.14ogaeg1mi3ws218rtl8w0m2rixe' name='tableau_ratings_by_year.csv' table='[tableau_ratings_by_year#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='fr_FR'>
+                  <column datatype='integer' name='year' ordinal='0' />
+                  <column datatype='real' name='rating' ordinal='1' />
+                  <column datatype='integer' name='nb_ratings' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[genre (tableau_movie_genres.csv)]' />
+              <expression op='[genre]' />
+            </expression>
+            <first-end-point object-id='tableau_movie_genres.csv_1E8E284C0976485AAA86A68977C26AB9' />
+            <second-end-point object-id='tableau_genres.csv_49810135E2A54AD9AE2E547CD726C9C4' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[movieId]' />
+              <expression op='[movieId (tableau_movie_genres.csv)]' />
+            </expression>
+            <first-end-point object-id='tableau_movies.csv_50ED1DB4B8C94D23A560C624858AE53F' />
+            <second-end-point object-id='tableau_movie_genres.csv_1E8E284C0976485AAA86A68977C26AB9' />
+          </relationship>
+        </relationships>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Feuille 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Répartition des nb de ratings par année</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tableau_genres' name='federated.1lmgdes172px0i1ac16mh07duxmf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lmgdes172px0i1ac16mh07duxmf'>
+            <column caption='Nb Ratings (Tableau Ratings By Year.Csv)' datatype='integer' name='[nb_ratings (tableau_ratings_by_year.csv)]' role='measure' type='quantitative' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[nb_ratings (tableau_ratings_by_year.csv)]' derivation='Sum' name='[sum:nb_ratings (tableau_ratings_by_year.csv):qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1lmgdes172px0i1ac16mh07duxmf].[none:year:qk]' field-type='quantitative' max='2023' min='1995' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1lmgdes172px0i1ac16mh07duxmf].[sum:nb_ratings (tableau_ratings_by_year.csv):qk]' field-type='quantitative' max='2139505' min='-216487' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1lmgdes172px0i1ac16mh07duxmf].[sum:nb_ratings (tableau_ratings_by_year.csv):qk]</rows>
+        <cols>[federated.1lmgdes172px0i1ac16mh07duxmf].[none:year:qk]</cols>
+        <annotations>
+          <annotation class='point' id='1' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#757575'>Peak</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1lmgdes172px0i1ac16mh07duxmf].[none:year:qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1lmgdes172px0i1ac16mh07duxmf].[sum:nb_ratings (tableau_ratings_by_year.csv):qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1lmgdes172px0i1ac16mh07duxmf].[none:year:qk]</field>
+                      <field>[federated.1lmgdes172px0i1ac16mh07duxmf].[sum:nb_ratings (tableau_ratings_by_year.csv):qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>2016</value>
+                    <value>1918597</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='5' y='-44' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{30695DF0-B7E4-4E9E-89C8-08118E5AF014}' />
+    </worksheet>
+    <worksheet name='Feuille 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Répartitions par genre de films</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tableau_genres' name='federated.1lmgdes172px0i1ac16mh07duxmf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lmgdes172px0i1ac16mh07duxmf'>
+            <column-instance column='[avg_rating]' derivation='Avg' name='[avg:avg_rating:qk]' pivot='key' type='quantitative' />
+            <column caption='Avg Rating' datatype='real' name='[avg_rating]' role='measure' type='quantitative' />
+            <column caption='Genre' datatype='string' name='[genre]' role='dimension' type='nominal' />
+            <column caption='Nb Films' datatype='integer' name='[nb_films]' role='measure' type='quantitative' />
+            <column caption='Nb Ratings' datatype='integer' name='[nb_ratings]' role='measure' type='quantitative' />
+            <column-instance column='[genre]' derivation='None' name='[none:genre:nk]' pivot='key' type='nominal' />
+            <column-instance column='[nb_films]' derivation='Sum' name='[sum:nb_films:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[nb_ratings]' derivation='Sum' name='[sum:nb_ratings:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1lmgdes172px0i1ac16mh07duxmf].[avg:avg_rating:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1lmgdes172px0i1ac16mh07duxmf].[sum:nb_ratings:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1lmgdes172px0i1ac16mh07duxmf].[sum:nb_films:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1lmgdes172px0i1ac16mh07duxmf].[none:genre:nk]</rows>
+        <cols>([federated.1lmgdes172px0i1ac16mh07duxmf].[avg:avg_rating:qk] + ([federated.1lmgdes172px0i1ac16mh07duxmf].[sum:nb_ratings:qk] + [federated.1lmgdes172px0i1ac16mh07duxmf].[sum:nb_films:qk]))</cols>
+        <show-full-range>
+          <column>[federated.1lmgdes172px0i1ac16mh07duxmf].[Avg Rating (classe)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{D0EA7476-FAB9-4EAA-B8CD-46C3FF32C23A}' />
+    </worksheet>
+    <worksheet name='Feuille 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tableau_genres' name='federated.1lmgdes172px0i1ac16mh07duxmf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lmgdes172px0i1ac16mh07duxmf'>
+            <column caption='Genre' datatype='string' name='[genre]' role='dimension' type='nominal' />
+            <column-instance column='[genre]' derivation='None' name='[none:genre:nk]' pivot='key' type='nominal' />
+            <column caption='Pct Ratings' datatype='real' name='[pct_ratings]' role='measure' type='quantitative' />
+            <column-instance column='[pct_ratings]' derivation='Sum' name='[sum:pct_ratings:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='VizExtension' />
+            <add-in add-in-id='com.tableau.extension.radial' extension-url='https://tableau-extensions.tableauusercontent.com/radial/radial.html' extension-version='1.0.0' instance-id='BDBF967B6A384B4E9520FC9A95D69464'>
+              <instance-settings />
+              <type-settings>
+                <worksheet />
+              </type-settings>
+            </add-in>
+            <encodings>
+              <custom _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{0ED9A69F-64F9-427D-9D24-39C7B724AA1E}' column='[federated.1lmgdes172px0i1ac16mh07duxmf].[none:genre:nk]' custom-type-name='level' />
+              <custom _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{374A30B0-20FD-4B9A-A9BC-C5D027B01810}' column='[federated.1lmgdes172px0i1ac16mh07duxmf].[sum:pct_ratings:qk]' custom-type-name='angle' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{81D1EC65-A437-48BC-AD7B-479CE5FDD5A4}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='89'>
+    <window class='worksheet' maximized='true' name='Feuille 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F4CD3189-084B-40A2-98E9-EE6F948C8113}' />
+    </window>
+    <window class='worksheet' name='Feuille 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1lmgdes172px0i1ac16mh07duxmf].[none:genre:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{C0150E82-D887-4FA2-9CF8-D0C8B308C228}' />
+    </window>
+    <window class='worksheet' name='Feuille 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1lmgdes172px0i1ac16mh07duxmf].[avg:avg_rating:ok]</field>
+            <field>[federated.1lmgdes172px0i1ac16mh07duxmf].[none:genre:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D75CA830-1AB0-4FBB-9956-031FC27E14D3}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Feuille 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Feuille 2' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Feuille 3' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+  <referenced-extensions>
+    <referenced-extension>
+      <manifest manifest-version='0.1'>
+        <worksheet-extension extension-version='1.0.0' id='com.tableau.extension.radial'>
+          <default-locale>en_US</default-locale>
+          <name resource-id='name' />
+          <description>A radial chart displays data in a circular format in which the total of all segment values add up to 100%, representing the whole. This visualization type creates donut charts, sunbursts, and fan charts, which are powerful means to summarize simple part-to-whole insights at a high level.</description>
+          <author email='github@tableau.com' name='Tableau' organization='Tableau' website='https://www.tableau.com/support' />
+          <min-api-version>1.12</min-api-version>
+          <source-location>
+            <url>https://tableau-extensions.tableauusercontent.com/radial/radial.html</url>
+          </source-location>
+          <icon />
+          <context-menu>
+            <configure-context-menu-item />
+          </context-menu>
+          <encoding id='level'>
+            <display-name resource-id='level-encoding'>Ring</display-name>
+            <role-spec>
+              <role-type>discrete-dimension</role-type>
+              <role-type>discrete-measure</role-type>
+            </role-spec>
+            <fields max-count='5' />
+            <encoding-icon token='level-radial' />
+            <tooltip resource-id='level-tooltip'>Radial Ring - Drag up to five dimensions here.</tooltip>
+          </encoding>
+          <encoding id='angle'>
+            <display-name resource-id='angle-encoding'>Angle</display-name>
+            <role-spec>
+              <role-type>continuous-measure</role-type>
+            </role-spec>
+            <fields max-count='1' />
+            <encoding-icon token='wedge' />
+            <tooltip resource-id='angle-tooltip'>Segment Angle - Drag a measure here.</tooltip>
+          </encoding>
+          <encoding id='center'>
+            <display-name resource-id='center-encoding'>Center</display-name>
+            <role-spec>
+              <role-type>continuous-measure</role-type>
+              <role-type>discrete-measure</role-type>
+            </role-spec>
+            <fields max-count='1' />
+            <encoding-icon token='exclamation' />
+            <tooltip resource-id='center-tooltip'>Center Label - Drag a measure here</tooltip>
+          </encoding>
+        </worksheet-extension>
+        <resources>
+          <resource id='angle-encoding'>
+            <text locale='de_DE'>Winkel</text>
+            <text locale='en_GB'>Angle</text>
+            <text locale='en_US'>Angle</text>
+            <text locale='es_ES'>Ángulo</text>
+            <text locale='fr_CA'>Angle</text>
+            <text locale='fr_FR'>Angle</text>
+            <text locale='it_IT'>Angolo</text>
+            <text locale='ja_JP'>角度</text>
+            <text locale='ko_KR'>각도</text>
+            <text locale='nl_NL'>Hoek</text>
+            <text locale='pt_BR'>Ângulo</text>
+            <text locale='sv_SE'>Vinkel</text>
+            <text locale='th_TH'>มุม</text>
+            <text locale='zh_CN'>角度</text>
+            <text locale='zh_TW'>角度</text>
+          </resource>
+          <resource id='angle-tooltip'>
+            <text locale='de_DE'>Segmentwinkel - Kennzahl hierher ziehen.</text>
+            <text locale='en_GB'>Segment Angle - Drag a measure here.</text>
+            <text locale='en_US'>Segment Angle - Drag a measure here.</text>
+            <text locale='es_ES'>Ángulo del segmento - Arrastre la medida aquí.</text>
+            <text locale='fr_CA'>Angle du segment - Faites glisser la mesure ici.</text>
+            <text locale='fr_FR'>Angle du segment - Faites glisser la mesure ici.</text>
+            <text locale='it_IT'>Angolo del segmento - Trascina la misura qui.</text>
+            <text locale='ja_JP'>セグメントの角度 - メジャーを使用.</text>
+            <text locale='ko_KR'>세그먼트 각도 - 측정값 사용.</text>
+            <text locale='nl_NL'>Segmenthoek - Sleep meetwaarde hierheen.</text>
+            <text locale='pt_BR'>Ângulo do segmento - Arraste a medida aqui.</text>
+            <text locale='sv_SE'>Segmentvinkel - Dra mått hit.</text>
+            <text locale='th_TH'>มุมของส่วน - ใช้ค่าการวัด.</text>
+            <text locale='zh_CN'>分段角度 - 使用度量.</text>
+            <text locale='zh_TW'>分段角度 - 使用測量值.</text>
+          </resource>
+          <resource id='center-encoding'>
+            <text locale='de_DE'>Zentrum</text>
+            <text locale='en_GB'>Centre</text>
+            <text locale='en_US'>Center</text>
+            <text locale='es_ES'>Centro</text>
+            <text locale='fr_CA'>Centre</text>
+            <text locale='fr_FR'>Centre</text>
+            <text locale='it_IT'>Centro</text>
+            <text locale='ja_JP'>中心</text>
+            <text locale='ko_KR'>중심</text>
+            <text locale='nl_NL'>Centrum</text>
+            <text locale='pt_BR'>Centro</text>
+            <text locale='sv_SE'>Centrum</text>
+            <text locale='th_TH'>ศูนย์กลาง</text>
+            <text locale='zh_CN'>中心</text>
+            <text locale='zh_TW'>中心</text>
+          </resource>
+          <resource id='center-tooltip'>
+            <text locale='de_DE'>Text zentrieren - Kennzahl hierher ziehen.</text>
+            <text locale='en_GB'>Centre Label - Drag a measure here.</text>
+            <text locale='en_US'>Center Label - Drag a measure here.</text>
+            <text locale='es_ES'>Texto central - Arrastre la medida aquí.</text>
+            <text locale='fr_CA'>Texte central - Faites glisser la mesure ici.</text>
+            <text locale='fr_FR'>Texte central - Faites glisser la mesure ici.</text>
+            <text locale='it_IT'>Testo centrale - Trascina la misura qui.</text>
+            <text locale='ja_JP'>中央のテキスト - メジャーを使用.</text>
+            <text locale='ko_KR'>중앙 텍스트 - 측정값 사용.</text>
+            <text locale='nl_NL'>Tekst in het midden - Sleep meetwaarde hierheen.</text>
+            <text locale='pt_BR'>Texto central - Arraste a medida aqui</text>
+            <text locale='sv_SE'>Tekst in het midden - Sleep meetwaarde hierheen.</text>
+            <text locale='th_TH'>ข้อความตรงกลาง - ใช้ค่าการวัด.</text>
+            <text locale='zh_CN'>中心文字 - 使用度量.</text>
+            <text locale='zh_TW'>中心文字 - 使用測量值.</text>
+          </resource>
+          <resource id='level-encoding'>
+            <text locale='de_DE'>Hierarchieebene</text>
+            <text locale='en_GB'>Ring</text>
+            <text locale='en_US'>Ring</text>
+            <text locale='es_ES'>Anillo</text>
+            <text locale='fr_CA'>Anneau</text>
+            <text locale='fr_FR'>Anneau</text>
+            <text locale='it_IT'>Anello</text>
+            <text locale='ja_JP'>階層レベル</text>
+            <text locale='ko_KR'>원</text>
+            <text locale='nl_NL'>Ring</text>
+            <text locale='pt_BR'>Anel</text>
+            <text locale='sv_SE'>nivå</text>
+            <text locale='th_TH'>วงแหวน</text>
+            <text locale='zh_CN'>环</text>
+            <text locale='zh_TW'>環</text>
+          </resource>
+          <resource id='level-tooltip'>
+            <text locale='de_DE'>Hierarchieebene - Ziehen Sie hier bis zu fünf Dimensionen.</text>
+            <text locale='en_GB'>Radial Ring - Drag up to five dimensions here.</text>
+            <text locale='en_US'>Radial Ring - Drag up to five dimensions here.</text>
+            <text locale='es_ES'>Anillo - Arrastre aquí hasta cinco dimensiones.</text>
+            <text locale='fr_CA'>Anneau - Faites glisser jusqu&apos;à cinq dimensions ici.</text>
+            <text locale='fr_FR'>Anneau - Faites glisser jusqu&apos;à cinq dimensions ici.</text>
+            <text locale='it_IT'>Anello - Trascina qui fino a cinque dimensioni.</text>
+            <text locale='ja_JP'>階層レベル - 最大5つのディメンション.</text>
+            <text locale='ko_KR'>원 - 최대 5개의 디멘션.</text>
+            <text locale='nl_NL'>Ring - Sleep hier maximaal vijf dimensies naartoe.</text>
+            <text locale='pt_BR'>Anel - Arraste até cinco dimensões aqui.</text>
+            <text locale='sv_SE'>nivå - Dra upp till fem dimensioner här.</text>
+            <text locale='th_TH'>วงแหวน - &#9;มิติสูงสุดห้ามิติ.</text>
+            <text locale='zh_CN'>环 - 最多五个维度.</text>
+            <text locale='zh_TW'>環 - 最多五個維度.</text>
+          </resource>
+          <resource id='name'>
+            <text locale='en_US'>Radial</text>
+            <text locale='ja_JP'>サンバーストチャート</text>
+            <text locale='zh_CN'>旭日圖</text>
+          </resource>
+        </resources>
+      </manifest>
+      <referenced-views>
+        <referenced-view instances='1' viewId='Feuille 3' />
+      </referenced-views>
+    </referenced-extension>
+  </referenced-extensions>
+</workbook>
