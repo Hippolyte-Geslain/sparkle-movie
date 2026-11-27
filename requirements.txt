@@ -1,5 +1,5 @@
 # Python 3.13 + Java 17 ou 21 (requis par Spark 4)
-# Windows uniquement : winutils.exe + hadoop.dll dans C:\hadoop\bin (pour que Spark puisse écrire des fichiers)
+# Aucune installation Hadoop / winutils nécessaire : les fichiers sont écrits avec pyarrow et pandas
 
 # Spark
 pyspark==4.0.5
