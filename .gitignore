@@ -20,3 +20,10 @@ Thumbs.db
 # Data folder (raw, clean and Tableau CSV) : too heavy for GitHub (100 MB max per file)
 # -> download MovieLens into data/raw/, then run exploration.ipynb to rebuild the rest
 data/
+ml-32m
+
+.vscode
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+data/
