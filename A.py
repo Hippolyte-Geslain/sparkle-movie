@@ -6,6 +6,14 @@ from pyspark.sql import SparkSession
 from pyspark.ml.recommendation import ALS
 from pyspark.ml.evaluation import RegressionEvaluator
 
+import os
+import sys
+import seaborn as sns
+import matplotlib.pyplot as plt
+import pandas as pd
+
+from pyspark.ml.tuning import ParamGridBuilder, TrainValidationSplit
+
 #config et builder session spark
 
 spark = (
@@ -17,11 +25,12 @@ spark = (
 )
 spark.sparkContext.setLogLevel("ERROR")
 
-DATA_DIR = Path(__file__).resolve().parent / "ml-32m" / "ml-32m"
-path_movies_csv = str(DATA_DIR / "movies.csv")
-path_ratings_csv = str(DATA_DIR / "ratings.csv")
+# Clean data produced by exploration.ipynb
+DATA_DIR = Path(__file__).resolve().parent / "data" / "clean"
+path_movies_csv = str(DATA_DIR / "movies" / "data_clean_movies.csv")
+path_ratings_csv = str(DATA_DIR / "ratings" / "data_clean_ratings.csv")
 
-df_movies = spark.read.csv(path_movies_csv, header=True, inferSchema=True)
+df_movies = spark.read.csv(path_movies_csv, header=True, inferSchema=True, escape='"')  # quotes inside titles are doubled ("")
 df_ratings = spark.read.csv(path_ratings_csv, header=True, schema="userId INT, movieId INT, rating FLOAT, timestamp LONG")
 
 # drop useless column
@@ -62,9 +71,6 @@ var = eval.evaluate(preds, {eval.metricName: 'var'})
 print(f"The model evaluation : \nrmse = {rmse}\nr2 = {r2}\nmae = {mae}\nvar = {var}\n")
 
 # Hyperparameters tuning
-
-from pyspark.ml.tuning import ParamGridBuilder, TrainValidationSplit
-
 param_grid = ParamGridBuilder().addGrid(
     als.rank, [5,10,15,20]
     ).addGrid(
@@ -103,13 +109,20 @@ for param_maps, rmse in zip(param_maps, rmse_scores):
 
 #visualisationn
 
-import seaborn as sns
-import matplotlib.pyplot as plt
-import pandas as pd 
+# The .venv (created with uv) doesn't find the Tcl/Tk files of the Python installation,
+# so matplotlib can't open its window ("Can't find a usable init.tcl") -> give it their path
+
+tcl_dir = os.path.join(sys.base_prefix, "tcl")
+if os.path.isdir(tcl_dir):
+    os.environ.setdefault("TCL_LIBRARY", os.path.join(tcl_dir, "tcl8.6"))
+    os.environ.setdefault("TK_LIBRARY", os.path.join(tcl_dir, "tk8.6"))
 
 #dataframing the model_acc
 
 df_rating_acc = pd.DataFrame(model_acc)
+
+# printed first : the tuning is long, the results stay visible even if the plot fails
+print(df_rating_acc.sort_values("rmse").to_string(index=False))
 
 #griding the dataframe
 
@@ -122,4 +135,10 @@ sns.heatmap(heatmap_data, annot=True, fmt=".4f", cmap='viridis', cbar_kws={'labe
 plt.title('Heatmap of RMSE by Rank and regParam')
 plt.xlabel('Rank')
 plt.ylabel('Regularization Parameter (regParam)')
+plt.tight_layout()
+
+# Save the heatmap (reusable in the slides / README), then open the window
+heatmap_path = Path(__file__).resolve().parent / "visuals" / "als_rmse_heatmap.png"
+heatmap_path.parent.mkdir(exist_ok=True)
+plt.savefig(heatmap_path, dpi=150, bbox_inches="tight")
 plt.show()
